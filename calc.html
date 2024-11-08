@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input  id="ip1" value="">
+    <input id="ip2" value="">
+    <button onclick="resultadd()">add</button>
+    <button onclick="resultsub()">sub</button>
+    <input value="" id="result">
+    <script>
+        var val1=document.getElementById("ip1")
+        var val2=document.getElementById("ip2")
+        var result=document.getElementById("result")
+        function resultadd(){
+            var vv1=Number(val1.value)
+            var vv2=Number(val2.value)
+            var total=vv1+vv2
+                result.value=total
+        }
+        function resultsub(){
+            var vv1=Number(val1.value)
+            var vv2=Number(val2.value)
+            var total=vv1-vv2
+                result.value=total
+        }
+</body>
+</html>
